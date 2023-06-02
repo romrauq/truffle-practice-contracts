@@ -4,8 +4,8 @@ pragma solidity 0.8.19;
 contract StorageContract {
     uint value;
 
-    constructor(uint8 _value) {
-        value = _value;
+    constructor() {
+        value = 707;
     }
 
     function getValue() public view returns (uint) {
