@@ -2,18 +2,17 @@
 pragma solidity 0.8.19;
 
 contract StorageContract {
-	uint value;
+    uint value;
 
-	constructor(uint8 _value{
-		value = _value;
-	} 
+    constructor(uint8 _value) {
+        value = _value;
+    }
 
-	function getValue() public view returns (uint) {
-		return value;
-	}
+    function getValue() public view returns (uint) {
+        return value;
+    }
 
-	function setValue(uint _new_value) public {
-		value = _new_value;
-	} 
+    function setValue(uint _new_value) public {
+        value = _new_value;
+    }
 }
- 
